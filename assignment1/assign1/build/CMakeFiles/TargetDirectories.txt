@@ -1,0 +1,3 @@
+/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/mesh_viewer.dir
+/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/edit_cache.dir
+/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/rebuild_cache.dir
