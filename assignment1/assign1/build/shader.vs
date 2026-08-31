@@ -10,7 +10,7 @@ out vec3 vColor;
 uniform mat4 uModel;
 uniform mat4 uProjection;
 uniform mat4 uView;
-uniform mat4 uNormalMatrix;
+uniform mat3 uNormalMatrix;
 uniform float uNearDepth;
 uniform float uFarDepth;
 
@@ -31,6 +31,6 @@ void main(){
     float dist = -viewPos.z;
     vDepth01 = clamp((dist - uNearDepth)/(uFarDepth - uNearDepth),0.0,1.0);
 
-    gl_Position = uProjection * uModel * vec4(aPos,1.0);
+    gl_Position = uProjection * viewPos;
     vColor = aColor;
 }

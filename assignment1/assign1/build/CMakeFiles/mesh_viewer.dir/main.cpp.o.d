@@ -1,7 +1,11 @@
 CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /home/coder/iisc/271_GV/assignment1/assign1/main.cpp \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/stdc-predef.h /usr/include/glm/ext/matrix_transform.hpp \
+ /usr/include/glm/gtc/constants.hpp \
+ /usr/include/glm/ext/scalar_constants.hpp \
+ /usr/include/glm/detail/setup.hpp /usr/include/c++/15/cassert \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -9,35 +13,51 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h \
+ /usr/include/c++/15/pstl/pstl_config.h /usr/include/assert.h \
+ /usr/include/c++/15/cstddef \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
+ /usr/include/c++/15/bits/version.h /usr/include/glm/simd/platform.h \
+ /usr/include/c++/15/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/GL/glew.h /usr/include/c++/15/cstddef \
- /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
- /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h \
- /usr/include/c++/15/bits/version.h /usr/include/c++/15/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/glu.h \
- /usr/include/GL/gl.h /usr/include/GL/freeglut.h \
- /usr/include/GL/freeglut_std.h /usr/include/c++/15/stdlib.h \
- /usr/include/c++/15/cstdlib /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/15/type_traits \
+ /usr/include/glm/ext/scalar_constants.inl /usr/include/c++/15/limits \
+ /usr/include/glm/gtc/constants.inl /usr/include/glm/geometric.hpp \
+ /usr/include/glm/detail/type_vec3.hpp \
+ /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/detail/type_vec3.inl \
+ /usr/include/glm/detail/compute_vector_relational.hpp \
+ /usr/include/glm/detail/func_geometric.inl \
+ /usr/include/glm/exponential.hpp /usr/include/glm/detail/type_vec1.hpp \
+ /usr/include/glm/detail/type_vec1.inl \
+ /usr/include/glm/detail/type_vec2.hpp \
+ /usr/include/glm/detail/type_vec2.inl \
+ /usr/include/glm/detail/type_vec4.hpp \
+ /usr/include/glm/detail/type_vec4.inl /usr/include/c++/15/cmath \
+ /usr/include/c++/15/bits/requires_hosted.h \
+ /usr/include/c++/15/bits/cpp_type_traits.h \
+ /usr/include/c++/15/ext/type_traits.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/15/bits/std_abs.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
@@ -64,22 +84,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/15/bits/std_abs.h /usr/include/GL/freeglut_ext.h \
- /usr/include/GL/freeglut_ucall.h /usr/include/glm/glm.hpp \
- /usr/include/glm/detail/_fixes.hpp /usr/include/c++/15/cmath \
- /usr/include/c++/15/bits/requires_hosted.h \
- /usr/include/c++/15/bits/cpp_type_traits.h \
- /usr/include/c++/15/type_traits /usr/include/c++/15/ext/type_traits.h \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/15/bits/specfun.h \
  /usr/include/c++/15/bits/stl_algobase.h \
  /usr/include/c++/15/bits/functexcept.h \
@@ -94,8 +98,7 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/c++/15/bits/stl_iterator.h \
  /usr/include/c++/15/bits/ptr_traits.h /usr/include/c++/15/debug/debug.h \
  /usr/include/c++/15/bits/predefined_ops.h /usr/include/c++/15/bit \
- /usr/include/c++/15/concepts /usr/include/c++/15/limits \
- /usr/include/c++/15/tr1/gamma.tcc \
+ /usr/include/c++/15/concepts /usr/include/c++/15/tr1/gamma.tcc \
  /usr/include/c++/15/tr1/special_function_util.h \
  /usr/include/c++/15/tr1/bessel_function.tcc \
  /usr/include/c++/15/tr1/beta_function.tcc \
@@ -107,25 +110,17 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/c++/15/tr1/poly_hermite.tcc \
  /usr/include/c++/15/tr1/poly_laguerre.tcc \
  /usr/include/c++/15/tr1/riemann_zeta.tcc \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/15/cassert \
- /usr/include/assert.h /usr/include/glm/simd/platform.h \
- /usr/include/c++/15/climits \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/15/cfloat \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/float.h \
- /usr/include/glm/fwd.hpp /usr/include/glm/detail/qualifier.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \
+ /usr/include/glm/detail/func_exponential.inl \
+ /usr/include/glm/vector_relational.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/detail/func_vector_relational.inl \
+ /usr/include/glm/detail/_vectorize.hpp /usr/include/glm/common.hpp \
+ /usr/include/glm/detail/_fixes.hpp \
+ /usr/include/glm/detail/func_common.inl \
+ /usr/include/glm/detail/compute_common.hpp \
+ /usr/include/glm/trigonometric.hpp \
+ /usr/include/glm/detail/func_trigonometric.inl \
+ /usr/include/glm/matrix.hpp /usr/include/glm/vec2.hpp \
  /usr/include/glm/ext/vector_bool2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/type_vec2.inl \
- /usr/include/glm/detail/compute_vector_relational.hpp \
  /usr/include/glm/ext/vector_bool2_precision.hpp \
  /usr/include/glm/ext/vector_float2.hpp \
  /usr/include/glm/ext/vector_float2_precision.hpp \
@@ -134,12 +129,10 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_int2.hpp \
  /usr/include/glm/ext/vector_int2_sized.hpp \
  /usr/include/glm/ext/scalar_int_sized.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint2.hpp \
+ /usr/include/glm/ext/vector_uint2.hpp \
  /usr/include/glm/ext/vector_uint2_sized.hpp \
  /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/glm/vec3.hpp \
  /usr/include/glm/ext/vector_bool3.hpp \
- /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/type_vec3.inl \
  /usr/include/glm/ext/vector_bool3_precision.hpp \
  /usr/include/glm/ext/vector_float3.hpp \
  /usr/include/glm/ext/vector_float3_precision.hpp \
@@ -150,8 +143,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_uint3.hpp \
  /usr/include/glm/ext/vector_uint3_sized.hpp /usr/include/glm/vec4.hpp \
  /usr/include/glm/ext/vector_bool4.hpp \
- /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/detail/type_vec4.inl \
  /usr/include/glm/ext/vector_bool4_precision.hpp \
  /usr/include/glm/ext/vector_float4.hpp \
  /usr/include/glm/ext/vector_float4_precision.hpp \
@@ -163,7 +154,10 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_uint4_sized.hpp /usr/include/glm/mat2x2.hpp \
  /usr/include/glm/ext/matrix_double2x2.hpp \
  /usr/include/glm/detail/type_mat2x2.hpp \
- /usr/include/glm/detail/type_mat2x2.inl /usr/include/glm/matrix.hpp \
+ /usr/include/glm/detail/type_mat2x2.inl \
+ /usr/include/glm/ext/matrix_double2x2_precision.hpp \
+ /usr/include/glm/ext/matrix_float2x2.hpp \
+ /usr/include/glm/ext/matrix_float2x2_precision.hpp \
  /usr/include/glm/mat2x3.hpp /usr/include/glm/ext/matrix_double2x3.hpp \
  /usr/include/glm/detail/type_mat2x3.hpp \
  /usr/include/glm/detail/type_mat2x3.inl \
@@ -212,36 +206,42 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: \
  /usr/include/glm/ext/matrix_double4x4_precision.hpp \
  /usr/include/glm/ext/matrix_float4x4.hpp \
  /usr/include/glm/ext/matrix_float4x4_precision.hpp \
- /usr/include/glm/detail/func_matrix.inl /usr/include/glm/geometric.hpp \
- /usr/include/glm/detail/func_geometric.inl \
- /usr/include/glm/exponential.hpp /usr/include/glm/detail/type_vec1.hpp \
- /usr/include/glm/detail/type_vec1.inl \
- /usr/include/glm/detail/func_exponential.inl \
- /usr/include/glm/vector_relational.hpp \
- /usr/include/glm/detail/func_vector_relational.inl \
- /usr/include/glm/detail/_vectorize.hpp /usr/include/glm/common.hpp \
- /usr/include/glm/detail/func_common.inl \
- /usr/include/glm/detail/compute_common.hpp \
- /usr/include/glm/ext/matrix_double2x2_precision.hpp \
- /usr/include/glm/ext/matrix_float2x2.hpp \
- /usr/include/glm/ext/matrix_float2x2_precision.hpp \
- /usr/include/glm/trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.inl \
- /usr/include/glm/packing.hpp /usr/include/glm/detail/func_packing.inl \
+ /usr/include/glm/detail/func_matrix.inl \
+ /usr/include/glm/ext/matrix_transform.inl /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h /usr/include/GL/glew.h \
+ /usr/include/GL/glu.h /usr/include/GL/gl.h /usr/include/GL/freeglut.h \
+ /usr/include/GL/freeglut_std.h /usr/include/c++/15/stdlib.h \
+ /usr/include/c++/15/cstdlib /usr/include/GL/freeglut_ext.h \
+ /usr/include/GL/freeglut_ucall.h /usr/include/glm/glm.hpp \
+ /usr/include/c++/15/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/15/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/float.h \
+ /usr/include/glm/fwd.hpp /usr/include/glm/packing.hpp \
+ /usr/include/glm/detail/func_packing.inl \
  /usr/include/glm/detail/type_half.hpp \
  /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
  /usr/include/glm/detail/func_integer.inl \
  /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_projection.hpp \
- /usr/include/glm/gtc/constants.hpp \
- /usr/include/glm/ext/scalar_constants.hpp \
- /usr/include/glm/ext/scalar_constants.inl \
- /usr/include/glm/gtc/constants.inl \
  /usr/include/glm/ext/matrix_projection.inl \
  /usr/include/glm/ext/matrix_clip_space.hpp \
  /usr/include/glm/ext/matrix_clip_space.inl \
- /usr/include/glm/ext/matrix_transform.hpp \
- /usr/include/glm/ext/matrix_transform.inl \
  /usr/include/glm/gtc/matrix_transform.inl \
  /usr/include/glm/gtc/type_ptr.hpp /usr/include/glm/gtc/quaternion.hpp \
  /usr/include/glm/ext/vector_relational.hpp \
