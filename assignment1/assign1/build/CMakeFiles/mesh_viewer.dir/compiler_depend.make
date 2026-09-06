@@ -3,6 +3,7 @@
 
 CMakeFiles/mesh_viewer.dir/main.cpp.o: /home/coder/iisc/271_GV/assignment1/assign1/main.cpp \
   /home/coder/iisc/271_GV/shader_utils.h \
+  /home/coder/iisc/271_GV/assignment1/assign1/benchmark.h \
   /usr/include/GL/freeglut.h \
   /usr/include/GL/freeglut_ext.h \
   /usr/include/GL/freeglut_std.h \
@@ -47,8 +48,11 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: /home/coder/iisc/271_GV/assignment1/assig
   /usr/include/c++/15/bits/istream.tcc \
   /usr/include/c++/15/bits/locale_classes.h \
   /usr/include/c++/15/bits/locale_classes.tcc \
+  /usr/include/c++/15/bits/locale_conv.h \
   /usr/include/c++/15/bits/locale_facets.h \
   /usr/include/c++/15/bits/locale_facets.tcc \
+  /usr/include/c++/15/bits/locale_facets_nonio.h \
+  /usr/include/c++/15/bits/locale_facets_nonio.tcc \
   /usr/include/c++/15/bits/localefwd.h \
   /usr/include/c++/15/bits/memory_resource.h \
   /usr/include/c++/15/bits/memoryfwd.h \
@@ -61,6 +65,7 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: /home/coder/iisc/271_GV/assignment1/assig
   /usr/include/c++/15/bits/postypes.h \
   /usr/include/c++/15/bits/predefined_ops.h \
   /usr/include/c++/15/bits/ptr_traits.h \
+  /usr/include/c++/15/bits/quoted_string.h \
   /usr/include/c++/15/bits/range_access.h \
   /usr/include/c++/15/bits/refwrap.h \
   /usr/include/c++/15/bits/requires_hosted.h \
@@ -116,11 +121,13 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: /home/coder/iisc/271_GV/assignment1/assig
   /usr/include/c++/15/ext/type_traits.h \
   /usr/include/c++/15/fstream \
   /usr/include/c++/15/initializer_list \
+  /usr/include/c++/15/iomanip \
   /usr/include/c++/15/ios \
   /usr/include/c++/15/iosfwd \
   /usr/include/c++/15/iostream \
   /usr/include/c++/15/istream \
   /usr/include/c++/15/limits \
+  /usr/include/c++/15/locale \
   /usr/include/c++/15/math.h \
   /usr/include/c++/15/new \
   /usr/include/c++/15/ostream \
@@ -336,6 +343,7 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: /home/coder/iisc/271_GV/assignment1/assig
   /usr/include/glm/vec3.hpp \
   /usr/include/glm/vec4.hpp \
   /usr/include/glm/vector_relational.hpp \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -449,7 +457,9 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o: /home/coder/iisc/271_GV/assignment1/assig
   /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -527,15 +537,13 @@ mesh_viewer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/lib/x86_64-linux-gnu/libglut.so:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h:
 
@@ -552,8 +560,6 @@ mesh_viewer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -659,6 +665,8 @@ mesh_viewer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/limits.h:
 
+/usr/include/libintl.h:
+
 /usr/lib/x86_64-linux-gnu/libc.so:
 
 /usr/include/glm/packing.hpp:
@@ -718,8 +726,6 @@ mesh_viewer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/glm/ext/vector_uint2_sized.hpp:
 
 /usr/include/glm/ext/vector_uint1.hpp:
-
-/usr/include/glm/ext/vector_relational.inl:
 
 /usr/include/glm/ext/vector_int4_sized.hpp:
 
@@ -789,19 +795,23 @@ mesh_viewer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/glm/ext/scalar_constants.hpp:
 
-/usr/include/linux/errno.h:
+/usr/include/glm/ext/quaternion_trigonometric.inl:
 
-/usr/include/c++/15/new:
+/usr/include/glm/ext/quaternion_trigonometric.hpp:
 
-CMakeFiles/mesh_viewer.dir/main.cpp.o:
+/usr/include/glm/ext/quaternion_transform.inl:
 
-/usr/lib/x86_64-linux-gnu/libGLX.so:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
+/usr/include/glm/ext/quaternion_transform.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+/usr/include/glm/ext/quaternion_relational.inl:
 
-/usr/include/glm/detail/type_vec2.inl:
+/usr/include/glm/ext/quaternion_geometric.inl:
+
+/usr/include/glm/ext/vector_relational.inl:
+
+/usr/include/c++/15/locale:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h:
 
@@ -809,17 +819,7 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/iosfwd:
 
-/usr/include/wchar.h:
-
-/usr/include/glm/mat3x2.hpp:
-
-/usr/include/c++/15/sstream:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/15/tr1/poly_hermite.tcc:
-
-/usr/include/c++/15/pstl/execution_defs.h:
+/usr/include/c++/15/bits/quoted_string.h:
 
 /usr/include/glm/detail/func_geometric.inl:
 
@@ -833,11 +833,21 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/exception:
 
+/usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
+
+/usr/include/c++/15/bits/locale_facets_nonio.h:
+
 /usr/include/c++/15/cwchar:
 
 /usr/include/c++/15/bits/stl_function.h:
 
 /usr/include/c++/15/ext/type_traits.h:
+
+/usr/lib/x86_64-linux-gnu/libglut.so:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/15/iomanip:
 
 /usr/include/c++/15/bits/functional_hash.h:
 
@@ -879,8 +889,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/cerrno:
 
-/usr/include/glm/ext/quaternion_relational.inl:
-
 /usr/include/c++/15/ios:
 
 /usr/include/c++/15/bits/uniform_int_dist.h:
@@ -891,15 +899,11 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/cassert:
 
-/usr/include/glm/ext/quaternion_trigonometric.hpp:
-
 /usr/include/c++/15/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/glm/ext/matrix_clip_space.hpp:
-
-/usr/include/glm/ext/matrix_float2x2.hpp:
 
 /usr/include/c++/15/bits/sstream.tcc:
 
@@ -908,8 +912,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 /usr/include/glm/gtc/epsilon.hpp:
 
 /usr/include/glm/ext/matrix_float2x2_precision.hpp:
-
-/usr/include/c++/15/pstl/pstl_config.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -935,17 +937,11 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/bits/ptr_traits.h:
 
-/usr/lib/x86_64-linux-gnu/libmvec.so.1:
-
-/usr/include/c++/15/bits/stl_iterator_base_types.h:
-
-/usr/include/glm/ext/vector_double3_precision.hpp:
-
-/usr/include/glm/ext/quaternion_common.hpp:
-
-/usr/include/glm/ext/matrix_double2x3.hpp:
-
 /usr/include/c++/15/bits/predefined_ops.h:
+
+/usr/include/c++/15/bits/postypes.h:
+
+/usr/include/c++/15/bits/ostream.tcc:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
@@ -963,9 +959,25 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/bits/basic_ios.tcc:
 
+/usr/include/asm-generic/errno-base.h:
+
 /usr/include/c++/15/math.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/usr/include/c++/15/bits/stl_iterator_base_types.h:
+
+/usr/include/glm/ext/vector_double3_precision.hpp:
+
+/usr/include/glm/ext/quaternion_common.hpp:
+
+/usr/include/glm/ext/matrix_double2x3.hpp:
+
+/home/coder/iisc/271_GV/assignment1/assign1/benchmark.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/glm/ext/quaternion_double_precision.hpp:
 
 /usr/include/glm/ext/vector_uint4_sized.hpp:
 
@@ -997,13 +1009,21 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/bits/locale_classes.h:
 
-/usr/include/glm/ext/quaternion_transform.inl:
-
 /usr/include/GL/glew.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/glm/detail/type_mat4x3.inl:
+
+/usr/include/c++/15/bits/locale_conv.h:
+
+/usr/include/c++/15/bits/locale_facets.tcc:
+
+/usr/include/ctype.h:
+
+/usr/include/glm/detail/type_mat3x2.inl:
+
+/usr/include/glm/ext/matrix_projection.hpp:
 
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
@@ -1031,13 +1051,23 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/GL/gl.h:
 
-/usr/include/c++/15/bits/ostream.tcc:
+/usr/include/glm/vec4.hpp:
+
+/usr/include/glm/ext/quaternion_relational.hpp:
+
+/usr/include/glm/ext/matrix_double2x4_precision.hpp:
 
 /usr/include/glm/ext/vector_bool4_precision.hpp:
 
 /usr/include/alloca.h:
 
 /usr/include/GL/freeglut_ext.h:
+
+/usr/include/c++/15/bits/locale_facets_nonio.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/glm/exponential.hpp:
 
 /usr/include/c++/15/bits/memoryfwd.h:
 
@@ -1107,21 +1137,13 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
-/usr/include/c++/15/bits/locale_facets.tcc:
-
-/usr/include/ctype.h:
-
-/usr/include/glm/detail/type_mat3x2.inl:
-
-/usr/include/glm/ext/matrix_projection.hpp:
-
 /usr/include/GL/freeglut_ucall.h:
 
 /usr/include/glm/detail/func_matrix.inl:
 
-/usr/include/asm-generic/posix_types.h:
-
 /usr/include/c++/15/bits/allocator.h:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/15/bit:
 
@@ -1144,6 +1166,8 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/15/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
@@ -1171,7 +1195,7 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/glm/detail/type_vec4.hpp:
 
-/usr/include/c++/15/bits/postypes.h:
+/usr/include/c++/15/bits/ostream_insert.h:
 
 /usr/include/c++/15/bits/stringfwd.h:
 
@@ -1191,7 +1215,35 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/c++/15/bits/basic_string.tcc:
 
-/usr/include/c++/15/bits/ostream_insert.h:
+/usr/include/linux/errno.h:
+
+/usr/include/c++/15/new:
+
+CMakeFiles/mesh_viewer.dir/main.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/libGLX.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/glm/detail/type_vec2.inl:
+
+/usr/include/glm/ext/matrix_float2x2.hpp:
+
+/usr/include/c++/15/pstl/execution_defs.h:
+
+/usr/include/c++/15/pstl/pstl_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/glm/mat3x2.hpp:
+
+/usr/include/c++/15/sstream:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/15/tr1/poly_hermite.tcc:
 
 /usr/include/glm/ext/vector_int4.hpp:
 
@@ -1261,9 +1313,9 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/strings.h:
 
-/usr/include/c++/15/ostream:
-
 /usr/include/c++/15/bits/exception.h:
+
+/usr/include/c++/15/ostream:
 
 /usr/include/glm/detail/compute_common.hpp:
 
@@ -1381,10 +1433,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/glm/detail/type_vec3.inl:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/glm/exponential.hpp:
-
 /usr/include/glm/ext/matrix_double2x4.hpp:
 
 /usr/include/glm/ext/matrix_double4x3.hpp:
@@ -1401,9 +1449,9 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/glm/ext/matrix_double3x3_precision.hpp:
 
-/usr/include/c++/15/bits/charconv.h:
-
 /usr/include/c++/15/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/15/bits/charconv.h:
 
 /usr/include/c++/15/tr1/poly_laguerre.tcc:
 
@@ -1427,8 +1475,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/glm/ext/matrix_float3x2_precision.hpp:
 
-/usr/include/glm/ext/quaternion_trigonometric.inl:
-
 /usr/include/c++/15/bits/stl_iterator.h:
 
 /usr/include/glm/ext/matrix_float3x3_precision.hpp:
@@ -1447,10 +1493,6 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 
 /usr/include/glm/ext/quaternion_double.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/glm/ext/quaternion_double_precision.hpp:
-
 /usr/include/glm/mat4x4.hpp:
 
 /usr/include/c++/15/bits/char_traits.h:
@@ -1464,15 +1506,3 @@ CMakeFiles/mesh_viewer.dir/main.cpp.o:
 /usr/include/glm/ext/matrix_float3x4.hpp:
 
 /usr/include/glm/ext/quaternion_geometric.hpp:
-
-/usr/include/glm/ext/quaternion_geometric.inl:
-
-/usr/include/glm/vec4.hpp:
-
-/usr/include/glm/ext/matrix_double2x4_precision.hpp:
-
-/usr/include/glm/ext/quaternion_relational.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/glm/ext/quaternion_transform.hpp:

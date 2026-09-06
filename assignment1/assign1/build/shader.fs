@@ -17,8 +17,6 @@ uniform vec3 uLightPos;
 uniform vec3 uLightColor;
 
 uniform float uKa, uKd, uKs, uShininess;
-uniform vec3  uDepthColorNear;
-uniform vec3  uDepthColorFar;
 uniform int uColormapId; // 0 = viridis (sequential), 1 = coolwarm (diverging)
 
 vec3 colormapViridis(float t){
@@ -53,18 +51,19 @@ void main(){
     vec3 baseColor = (uColormapId == 0) ? colormapViridis(vDepth01) : colormapCoolWarm(vDepth01);
 
 
-    vec3 N = normalize(vNormal);
-    vec3 L = normalize(uLightPos - vFragPos);
-    vec3 V = normalize(uViewPos - vFragPos);
-    vec3 H = normalize(L + V);
+    vec3 N        = normalize(vNormal);
+    vec3 L        = normalize(uLightPos - vFragPos);
+    vec3 V        = normalize(uViewPos - vFragPos);
+    vec3 R        = reflect(-L, N);
 
-    vec3 ambient = uKa * baseColor;
 
-    float diff = max(dot(N,L) , 0.0);
-    vec3 diffuse =  uKd * diff * baseColor * uLightColor ; 
-    float spec = pow(max(dot(N,H),0.0), uShininess);
+    vec3 ambient  = uKa * baseColor;
+
+    float diff    = max(dot(N,L) , 0.0);
+    vec3 diffuse  =  uKd * diff * baseColor * uLightColor ; 
+    float spec    = pow(max(dot(R,V),0.0), uShininess);
     vec3 specular =  uKs * spec * uLightColor;
 
-    FragColor  = vec4(ambient + diffuse + specular, 1.0);
+    FragColor     = vec4(ambient + diffuse + specular, 1.0);
 
 }
