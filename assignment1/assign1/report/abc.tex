@@ -1,0 +1,300 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=0pt, topsep=1pt, parsep=0pt}
+\setlength{\parskip}{3pt}
+
+\title{\vspace{-2em}\large Assignment 1}
+\author{\normalsize Priyank \\ \footnotesize GV~271: Graphics and Visualization, Indian Institute of Science}
+\date{\footnotesize \today}
+
+\begin{document}
+\begin{center}
+{\large\textbf{Assignment 1}}\\[2pt]
+{\normalsize Priyank}\\
+{\footnotesize GV~271 - Graphics and Visualization, Indian Institute of Science \quad\textbullet\quad \today}
+\end{center}
+\vspace{2pt}
+
+\textbf{GPU:} Mesa Intel(R) Iris(R) Xe Graphics (TGL GT2)\\
+\textbf{CPU:} 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+
+\small
+This assignment renders a protein molecule whose structure is defined by the provided OFF files. 
+The mesh rotates continuously  about a randomly chosen axis with a fixed angular speed.
+
+
+\section{Task 1: Model Loading, Camera Setup, Rotation, and Base Rendering}
+\textbf{(i) Approach.} The OFF parser reads vertices/polygon indices into a flat indexed triangle buffer. 
+Since OFF carries no normals, per vertex normals are derived from the face normals of the incident 
+triangles, under either of two weighting schemes selectable at runtime (area or angle; see (iii)). 
+The mesh rotates continuously about an axis drawn uniformly at random once per 
+run (\texttt{initRandomAxis}), 
+advancing every frame at a fixed rate driven by wall clock time 
+(\texttt{timer}), composed into the model matrix with the centering 
+translation and normalizing scale.
+
+\textbf{(ii) Core files/functions.} \texttt{main.cpp}: \texttt{readOffFile}, 
+\texttt{createVertexBuffers}, \texttt{createVertexNormals}, 
+\texttt{ComputeModelTransform}, \texttt{setupCamera}, 
+\texttt{updateProjection}, \texttt{initRandomAxis}, 
+\texttt{timer}. \texttt{shader.vs}/\texttt{shader.fs} 
+(\texttt{shaderProgram}) render the whole mesh.
+
+\textbf{(iii) Challenges / design decisions.} Two vertex normal weighting
+schemes are implemented and switchable at runtime (\texttt{n}, via
+\texttt{currentNormalMode}/\texttt{rebuildNormals}). Accumulating
+\emph{unnormalized} cross products gives area weighting for free, since a
+cross product's magnitude is twice the triangle area; the default instead
+normalizes each face normal and weights it by the interior angle at the
+vertex, which is insensitive to triangulation density, so a dense patch of
+small triangles cannot outvote a coarser neighbouring region sharing the
+same vertex. Face normals are retained separately (\texttt{faceNormals})
+and drive a flat shading mode for comparison. A random rotation axis can, by
+chance, land close to the camera's fixed view direction, under which rotation
+produces almost no visible depth change and the object appears to spin flat
+rather than tumble in 3D; candidate axes within $32^\circ$ of the view direction
+are rejected and redrawn.
+
+\section{Task 2: Depth Based Colormap Shading}
+\textbf{(i) Approach.} Lighting uses 
+(ambient + diffuse + Phong(R.V)). The 
+diffuse base color comes from a depth driven colormap 
+(viridis or coolwarm) instead of a flat material, so 
+once the mesh is cut open in Tasks 3 and 4, interior faces 
+are distinguished by depth without needing a second material.
+
+\textbf{(ii) Core files/functions.} \texttt{shader.fs}: 
+\texttt{colormapViridis}, 
+\texttt{colormapCoolWarm}, 
+lighting in \texttt{main()}. 
+\texttt{shader.vs}: 
+\texttt{vDepth01} from \texttt{-viewPos.z}. 
+Uniforms \texttt{uKa/uKd/uKs/uShininess}, 
+\texttt{uNearDepth/uFarDepth} set once, 
+Functions : 
+\texttt{faceNormals},
+\texttt{rebuildNormals()},
+\texttt{buildFlatShadedMesh()},
+in \texttt{main.cpp}.
+
+\textbf{(iii) Challenges / design decisions.} Lighting was evaluated 
+per fragment in shaders rather than on the CPU specifically for performance: 
+every quantity it depends on (rotated normal, view vector, depth color) 
+changes every frame under continuous rotation regardless of implementation, 
+and the GPU evaluates this in parallel across thousands of cores, 
+avoiding both a serial per pixel CPU loop and again uploading a full color buffer every frame. 
+Depth uses view-space
+\texttt{-viewPos.z} (not NDC $z$) so the ramp stays linear regardless of projection
+type. Colormaps are piecewise-linear keyframe tables, trading exact colour fidelity
+for shader simplicity. A \texttt{uUseVertexColor} toggle isolates shading bugs from
+geometry bugs during debugging.
+
+
+\section{Task 3: CPU Side Slicing}
+\textbf{(i) Approach.} $M$ evenly spaced lines through the origin ($\theta_i=i\pi/M$) 
+give $2M$ rays around the full circle; each wedge is 
+bounded by two half planes from its boundary rays 
+rotated $\pm90^\circ$. Every triangle is clipped 
+against both half planes in sequence (a Sutherland Hodgman 
+clip specialized to triangles), and surviving geometry 
+per wedge is pushed outward along its bisector 
+for the exploded view; all buffers rebuild every 
+frame. At $M=1$ the two wedges are further distinguished 
+by polygon mode: one \texttt{GL\_FILL}, 
+one \texttt{GL\_LINE}: satisfying the base solid/wireframe 
+requirement; at $M>1$ all wedges are filled.
+
+
+\textbf{(ii) Core files/functions.} \texttt{main.cpp}: \texttt{rebuildWedgeGeometryDefs}
+(angles, half plane normals, bisectors), \texttt{clipListAgainstPlane} (lone vertex
+detection, edge intersection, 1 or 2 triangle output), \texttt{lerpVert},
+\texttt{buildAllWedgesCPU}, \texttt{uploadSliceVAO}. The $M=1$ solid/wireframe pair
+is applied in \texttt{display} (the \texttt{wireframeThis} branch around
+\texttt{glPolygonMode}).
+
+\textbf{(iii) Challenges / design decisions.} The ``lone'' vertex is found without 
+sorting: with three booleans and two possible values, at least two must agree, 
+so a pigeonhole case split locates the odd one out in $O(1)$. The 
+intersection parameter $t=d_a/(d_a-d_b)$ is guaranteed in $(0,1)$ once the 
+lone vertex's sign is confirmed opposite its neighbors. Indices are cyclically relabeled 
+($a,b,c=\text{lone},(\text{lone}{+}1)\%3,(\text{lone}{+}2)\%3$), preserving 
+winding so lighting/culling stay correct post clip. The cost is performance: 
+the full mesh is reclipped and every wedge's VBO/EBO reuploaded every frame, 
+motivating Task 4.
+
+The clipper is parameterized by signed distance $d = \mathbf{n}\cdot\mathbf{p} - w$
+rather than assuming planes through the origin, so plane position is a runtime
+scalar. Setting $w \neq 0$ (\texttt{o}, via \texttt{wedgeCutOffset}) slides each
+wedge boundary off the scene centre in both the CPU and GPU paths. Note that 
+wedges presuppose concurrency: with the boundaries moved apart,
+adjacent wedges no longer share a cut line, so small gaps open between them: a
+property of the wedge decomposition, not of the clip.
+
+
+\section{Task 4: GPU-Side Slicing via Geometry Shader}
+\textbf{(i) Approach.} The same clip algorithm runs as a 
+per triangle geometry shader stage in local space, 
+reusing one static buffer every frame with no CPU rebuild. 
+A pass through vertex shader forwards local position/normal; 
+the geometry shader clips against \texttt{uWedgeNormalA}, 
+then \texttt{uWedgeNormalB} (two chained half space clips = the wedge), 
+applying MVP and the offset only to emitted vertices. 
+The Task 3 fill/wireframe rule at $M=1$ is 
+mirrored here via \texttt{glPolygonMode} around the GPU draws.
+
+
+\textbf{(ii) Core files/functions.} \texttt{slice.vs} (pass through). 
+\texttt{slice.gs}: \texttt{clipTri}, \texttt{main()} (two stage clip chaining), 
+\texttt{emitWorld}/\texttt{emitTri}. \texttt{shader.fs} reused unchanged. 
+\texttt{main.cpp}: \texttt{buildPreppedWholeMesh}, uniform wiring for \texttt{sliceGSProgram}.
+
+
+\textbf{(iii) Challenges / design decisions.} 
+% \texttt{max\_vertices=12} covers the
+% worst case: the first clip yields at most 2 triangles, each of which the second
+% clip splits into at most 2 more, giving 4 triangles of 3 vertices. Each is emitted
+% as an independent primitive (\texttt{EndPrimitive()} after every third vertex),
+% so the declared \texttt{triangle\_strip} output carries no shared vertices --
+% strips would not help here, since consecutive clipped triangles rarely share an edge.
+% Normals are re-normalized after interpolation, since the linear blend of two unit
+% vectors is not itself unit length.
+\textbf{(iii) Challenges / design decisions.} \texttt{max\_vertices=12} covers the
+worst case: the first clip yields at most 2 triangles, each of which the second clip
+splits into at most 2 more, giving 4 triangles of 3 vertices. Each is emitted as an
+independent primitive (\texttt{EndPrimitive()} after every third vertex), so the
+declared \texttt{triangle\_strip} output carries no shared vertices. Normals are
+renormalized after interpolation, since the linear blend of two unit vectors is not
+itself unit length.
+
+The key bug was variable shadowing: locally redeclaring
+\texttt{uSWedgeNormalA/BLoc} during init left the globals at their
+zero initialized value. Since $0$ is itself a valid uniform location, the wedge
+normals were silently written into whichever uniform occupied slot~0 rather than
+failing loudly, and the clip planes stayed at $(0,0,0)$ - for which
+$\mathrm{dot}(p,n)>0$ is false everywhere, discarding every triangle. Relatedly,
+uniform storage is per-program, not per name: lighting uniforms set only on
+\texttt{shaderProgram} left the GPU sliced mesh pure black until set again on
+\texttt{sliceGSProgram}.
+
+When slices overlap, the extra cost lands on the fragment stage rather than the
+geometry stage. If $d$ is small, neighbouring wedges still cover some of the same
+pixels, and those pixels get shaded more than once: work that is thrown away
+when a later fragment overwrites an earlier one. Both implementations pay the
+same absolute cost here, since both rasterize the same overlapping geometry
+through the same fragment shader. What differs is how much it matters. A CPU
+frame is dominated by \texttt{buildAllWedgesCPU} reclipping and reuploading the
+mesh - over three seconds per frame on \texttt{2OAR\_1}- so a sub millisecond
+overdraw penalty disappears into the noise. GPU frames run in a few
+milliseconds, so the same penalty is a visible fraction of the total.
+
+
+\section{Performance Analysis: CPU vs.\ GPU Wedge Slicing}
+\textbf{(i) Approach.} FPS is measured by accumulating frames over fixed wall-clock windows 
+(\texttt{glutGet(GLUT\_ELAPSED\_TIME)} in \texttt{timer}), shown in the HUD. 
+Two axes are varied: active planes $M$ (1 to 10, via \texttt{j}/\texttt{k}, calling
+\texttt{rebuildWedgeGeometryDefs}; sampled at $M \in \{1,4,10\}$ for the table) and
+mesh resolution (separate OFF files). Each (resolution, $M$) 
+pair is logged for both CPU and GPU modes, with non parallel plane orientations.
+
+\textbf{(ii) Core files/functions.} \texttt{main.cpp}: \texttt{timer}, \texttt{keyboard} (\texttt{j}/\texttt{k}), \texttt{display} (mode dispatch).
+
+\textbf{(iii) Expected behavior, reasoning, and results.} CPU cost scales with 
+(triangle count $\times$ $2M$ wedges), since \texttt{buildAllWedgesCPU} 
+again clips and again uploads every wedge every frame. GPU cost grows far more
+ gently with $M$: each wedge costs one more draw call plus inherently 
+ parallel \texttt{slice.gs} work, with no reclip- \texttt{buildPreppedWholeMesh}'s buffer uploads once, 
+ regardless of $M$. Higher resolution scales the CPU loop directly 
+ and serially, while the GPU's per primitive invocation is  
+ parallel and degrades more slowly until cores saturate. Wedge boundaries 
+ crossing the mesh's dense interior force more triangles through the expensive 
+ split and interpolate branch on both implementations- cheap on the GPU 
+ (a few extra \texttt{EmitVertex} calls in GPU memory), costlier on the CPU 
+ (more interpolation and a bigger reupload).
+
+
+% \emph{Table below is a placeholder -- replace with FPS measured on the target machine.}
+
+% \vspace{-2pt}
+% \begin{table}[h!]
+% \centering
+% \footnotesize
+% \renewcommand{\arraystretch}{0.92}
+% \begin{tabular}{@{}llrr@{}}
+% \toprule
+% Mesh Resolution & Planes ($M$) & CPU FPS & GPU FPS \\
+% \midrule
+% Low  & 1  & TODO & TODO \\
+% Low  & 5  & TODO & TODO \\
+% Low  & 10 & TODO & TODO \\
+% Med  & 1  & TODO & TODO \\
+% Med  & 5  & TODO & TODO \\
+% Med  & 10 & TODO & TODO \\
+% High & 1  & TODO & TODO \\
+% High & 5  & TODO & TODO \\
+% High & 10 & TODO & TODO \\
+% \bottomrule
+% \end{tabular}
+% \caption{FPS by mesh resolution and active cutting planes $M$ ($2M$ wedges), CPU vs.\ GPU slicing.}
+% \end{table}
+
+\input{benchmark_table}
+\vspace{-4pt}
+
+
+\section*{Extension: Non Concurrent Cutting Planes}
+Tasks 3 and 4 cut with planes that all pass through the scene centre. That
+restriction is what keeps the decomposition simple: $M$ concurrent planes always
+give exactly $2M$ wedges, each bounded by two half-planes, so the regions can be
+worked out in advance (\texttt{rebuildWedgeGeometryDefs}) and each wedge costs the
+same two clips no matter how large $M$ is.
+
+Mode~4 (\texttt{4}) removes that restriction. With planes in general position, the
+number of regions depends on where the planes happen to fall, so it cannot be
+computed up front. \texttt{buildArrangementCPU} therefore finds the regions by
+cutting repeatedly: start with the whole mesh, and for each plane split every
+surviving piece in two, keeping both halves and discarding anything empty.
+
+Each split also pushes its two halves apart along the normal of the plane that
+separated them, and these displacements add up as a piece passes through
+successive planes. This is what guarantees separation: two pieces divided by a
+plane always move in opposite directions along it, whatever their size. Pushing
+each piece along its own centroid direction does not work, because a thin sliver
+and the slab next to it have almost the same centroid and end up on top of each
+other.
+
+None of this ports to the geometry shader. A GS handles one triangle at a time
+and carries no state between passes, so the accumulated offsets have nowhere to
+live, and $M$ chained clips would need $3\cdot2^M$ output vertices against a
+fixed \texttt{max\_vertices} budget.
+
+
+\section*{Keyboard Controls}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Key & Action \\
+\midrule
+\texttt{1}/\texttt{2}/\texttt{3}/\texttt{4} & Whole mesh / CPU slice / GPU slice / non-concurrent planes \\
+\texttt{j}/\texttt{k} & Decrease / increase active cutting planes ($M$) \\
+\texttt{o} & Toggle cutting planes through-centre / off-centre \\
+\texttt{n} & Toggle vertex-normal weighting (area / angle) \\
+\texttt{m} & Toggle flat (face-normal) / smooth (vertex-normal) shading \\
+\texttt{v} & Cycle colormap (viridis / coolwarm) \\
+\texttt{c} & Toggle lit colormap vs.\ flat colour \\
+\texttt{f} & Toggle wireframe / filled \\
+\texttt{d} & Toggle dark / light background \\
+\texttt{+}/\texttt{-} & Zoom in / out \\
+\texttt{b} & Run the benchmark sweep \\
+\bottomrule
+\end{tabular}
+\end{document}
