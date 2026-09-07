@@ -20,37 +20,26 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
-      - "/home/coder/.local/bin/uname"
-      - "/home/coder/IDEs/helix/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
       - "/usr/sbin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "message-v1"
@@ -58,7 +47,7 @@ events:
       - "/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 7.0.0-29-generic - x86_64
+      The system is: Linux - 7.0.0-30-generic - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -80,37 +69,26 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
-      - "/home/coder/.local/bin/gmake"
-      - "/home/coder/IDEs/helix/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
       - "/usr/sbin/gmake"
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -138,37 +116,26 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
-      - "/home/coder/.local/bin/cc"
-      - "/home/coder/IDEs/helix/cc"
       - "/usr/local/sbin/cc"
       - "/usr/local/bin/cc"
       - "/usr/sbin/cc"
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -197,17 +164,12 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "message-v1"
@@ -252,30 +214,21 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -298,30 +251,21 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -344,30 +288,21 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -390,30 +325,21 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -436,30 +362,21 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -482,30 +399,21 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -528,30 +436,21 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -574,30 +473,21 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -620,42 +510,29 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/home/coder/.local/bin/dlltool"
-      - "/home/coder/IDEs/helix/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
       - "/usr/sbin/dlltool"
       - "/sbin/dlltool"
       - "/bin/dlltool"
-      - "/usr/games/dlltool"
-      - "/usr/local/games/dlltool"
       - "/snap/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -678,30 +555,21 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -724,42 +592,29 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/home/coder/.local/bin/tapi"
-      - "/home/coder/IDEs/helix/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
       - "/usr/sbin/tapi"
       - "/sbin/tapi"
       - "/bin/tapi"
-      - "/usr/games/tapi"
-      - "/usr/local/games/tapi"
       - "/snap/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -785,42 +640,29 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
-      - "/home/coder/.local/bin/gcc-ar-15.2"
-      - "/home/coder/IDEs/helix/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
       - "/usr/sbin/gcc-ar-15.2"
       - "/sbin/gcc-ar-15.2"
       - "/bin/gcc-ar-15.2"
-      - "/usr/games/gcc-ar-15.2"
-      - "/usr/local/games/gcc-ar-15.2"
       - "/snap/bin/gcc-ar-15.2"
     found: "/usr/bin/gcc-ar-15"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -846,42 +688,29 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
-      - "/home/coder/.local/bin/gcc-ranlib-15.2"
-      - "/home/coder/IDEs/helix/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
       - "/usr/sbin/gcc-ranlib-15.2"
       - "/sbin/gcc-ranlib-15.2"
       - "/bin/gcc-ranlib-15.2"
-      - "/usr/games/gcc-ranlib-15.2"
-      - "/usr/local/games/gcc-ranlib-15.2"
       - "/snap/bin/gcc-ranlib-15.2"
     found: "/usr/bin/gcc-ranlib-15"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -916,17 +745,12 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -955,17 +779,12 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "message-v1"
@@ -1013,42 +832,29 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
-      - "/home/coder/.local/bin/gcc-ar-15.2"
-      - "/home/coder/IDEs/helix/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
       - "/usr/sbin/gcc-ar-15.2"
       - "/sbin/gcc-ar-15.2"
       - "/bin/gcc-ar-15.2"
-      - "/usr/games/gcc-ar-15.2"
-      - "/usr/local/games/gcc-ar-15.2"
       - "/snap/bin/gcc-ar-15.2"
     found: "/usr/bin/gcc-ar-15"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "find-v1"
@@ -1074,42 +880,29 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
-      - "/home/coder/.local/bin/gcc-ranlib-15.2"
-      - "/home/coder/IDEs/helix/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
       - "/usr/sbin/gcc-ranlib-15.2"
       - "/sbin/gcc-ranlib-15.2"
       - "/bin/gcc-ranlib-15.2"
-      - "/usr/games/gcc-ranlib-15.2"
-      - "/usr/local/games/gcc-ranlib-15.2"
       - "/snap/bin/gcc-ranlib-15.2"
     found: "/usr/bin/gcc-ranlib-15"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
   -
     kind: "try_compile-v1"
@@ -1120,8 +913,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F"
-      binary: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F"
+      source: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ"
+      binary: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1130,13 +923,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F'
+        Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_709cd/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_709cd.dir/build.make CMakeFiles/cmTC_709cd.dir/build
-        gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F'
-        Building C object CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8982/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8982.dir/build.make CMakeFiles/cmTC_a8982.dir/build
+        gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ'
+        Building C object CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1146,8 +939,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_709cd.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_709cd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccVyv71W.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a8982.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a8982.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccssoy7u.s
         GNU C23 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1164,14 +957,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: edd70396dcc669433a92073f97309866
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_709cd.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o /tmp/ccVyv71W.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a8982.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o /tmp/ccssoy7u.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_709cd
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_709cd.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_a8982
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8982.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
@@ -1184,14 +977,14 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_709cd' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_709cd.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf5ebGA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_709cd /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a8982' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a8982.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBIn9LR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a8982 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf5ebGA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_709cd /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBIn9LR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a8982 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_709cd' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_709cd.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -o cmTC_709cd
-        gmake[1]: Leaving directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a8982' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a8982.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -o cmTC_a8982
+        gmake[1]: Leaving directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ'
         
       exitCode: 0
   -
@@ -1226,13 +1019,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F']
+        ignore line: [Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_709cd/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_709cd.dir/build.make CMakeFiles/cmTC_709cd.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-ocnC9F']
-        ignore line: [Building C object CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8982/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a8982.dir/build.make CMakeFiles/cmTC_a8982.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-2iCbWZ']
+        ignore line: [Building C object CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1242,8 +1035,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_709cd.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_709cd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccVyv71W.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a8982.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a8982.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccssoy7u.s]
         ignore line: [GNU C23 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1260,14 +1053,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: edd70396dcc669433a92073f97309866]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_709cd.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o /tmp/ccVyv71W.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a8982.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o /tmp/ccssoy7u.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_709cd]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_709cd.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_a8982]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8982.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
@@ -1280,13 +1073,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_709cd' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_709cd.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf5ebGA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_709cd /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a8982' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a8982.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBIn9LR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a8982 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccf5ebGA.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccBIn9LR.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1304,7 +1097,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_709cd] ==> ignore
+          arg [cmTC_a8982] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -1319,7 +1112,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -1334,7 +1127,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf5ebGA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_709cd /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_709cd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBIn9LR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a8982 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a8982.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1374,8 +1167,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG"
-      binary: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG"
+      source: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t"
+      binary: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1385,13 +1178,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG'
+        Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7989/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b7989.dir/build.make CMakeFiles/cmTC_b7989.dir/build
-        gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG'
-        Building CXX object CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2bf34/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2bf34.dir/build.make CMakeFiles/cmTC_2bf34.dir/build
+        gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t'
+        Building CXX object CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1401,8 +1194,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7989.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b7989.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cccykgkc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2bf34.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2bf34.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccgPI9AH.s
         GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1423,14 +1216,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7989.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o /tmp/cccykgkc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2bf34.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgPI9AH.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b7989
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7989.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_2bf34
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bf34.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
@@ -1443,14 +1236,14 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7989' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7989.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKNCPlx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b7989 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2bf34' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2bf34.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0bSt5D.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2bf34 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKNCPlx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b7989 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0bSt5D.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2bf34 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7989' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7989.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b7989
-        gmake[1]: Leaving directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2bf34' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2bf34.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2bf34
+        gmake[1]: Leaving directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t'
         
       exitCode: 0
   -
@@ -1491,13 +1284,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG']
+        ignore line: [Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7989/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b7989.dir/build.make CMakeFiles/cmTC_b7989.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-mbj2LG']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2bf34/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2bf34.dir/build.make CMakeFiles/cmTC_2bf34.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-G0aB6t']
+        ignore line: [Building CXX object CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1507,8 +1300,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7989.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b7989.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cccykgkc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2bf34.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2bf34.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccgPI9AH.s]
         ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1529,14 +1322,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7989.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o /tmp/cccykgkc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2bf34.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgPI9AH.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b7989]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7989.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_2bf34]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bf34.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
@@ -1549,13 +1342,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7989' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7989.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKNCPlx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b7989 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2bf34' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2bf34.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0bSt5D.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2bf34 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccKNCPlx.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc0bSt5D.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1573,7 +1366,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b7989] ==> ignore
+          arg [cmTC_2bf34] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -1588,7 +1381,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1599,7 +1392,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKNCPlx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b7989 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b7989.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0bSt5D.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2bf34 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2bf34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1649,16 +1442,12 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -1682,16 +1471,12 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/home/coder/.local/bin/GL/gl.h"
-      - "/home/coder/IDEs/helix/GL/gl.h"
       - "/usr/local/sbin/GL/gl.h"
       - "/usr/local/bin/GL/gl.h"
       - "/usr/sbin/GL/gl.h"
       - "/usr/bin/GL/gl.h"
       - "/sbin/GL/gl.h"
       - "/bin/GL/gl.h"
-      - "/usr/games/GL/gl.h"
-      - "/usr/local/games/GL/gl.h"
       - "/snap/bin/GL/gl.h"
       - "/usr/local/include/x86_64-linux-gnu/GL/gl.h"
       - "/usr/local/include/GL/gl.h"
@@ -1700,17 +1485,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -1743,16 +1523,12 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -1773,16 +1549,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/GL/glx.h"
-      - "/home/coder/IDEs/helix/GL/glx.h"
       - "/usr/local/sbin/GL/glx.h"
       - "/usr/local/bin/GL/glx.h"
       - "/usr/sbin/GL/glx.h"
       - "/usr/bin/GL/glx.h"
       - "/sbin/GL/glx.h"
       - "/bin/GL/glx.h"
-      - "/usr/games/GL/glx.h"
-      - "/usr/local/games/GL/glx.h"
       - "/snap/bin/GL/glx.h"
       - "/usr/local/include/x86_64-linux-gnu/GL/glx.h"
       - "/usr/local/include/GL/glx.h"
@@ -1791,17 +1563,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -1834,16 +1601,12 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -1864,16 +1627,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/EGL/egl.h"
-      - "/home/coder/IDEs/helix/EGL/egl.h"
       - "/usr/local/sbin/EGL/egl.h"
       - "/usr/local/bin/EGL/egl.h"
       - "/usr/sbin/EGL/egl.h"
       - "/usr/bin/EGL/egl.h"
       - "/sbin/EGL/egl.h"
       - "/bin/EGL/egl.h"
-      - "/usr/games/EGL/egl.h"
-      - "/usr/local/games/EGL/egl.h"
       - "/snap/bin/EGL/egl.h"
       - "/usr/local/include/x86_64-linux-gnu/EGL/egl.h"
       - "/usr/local/include/EGL/egl.h"
@@ -1882,17 +1641,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -1925,16 +1679,12 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -1955,16 +1705,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/GLES2/gl2.h"
-      - "/home/coder/IDEs/helix/GLES2/gl2.h"
       - "/usr/local/sbin/GLES2/gl2.h"
       - "/usr/local/bin/GLES2/gl2.h"
       - "/usr/sbin/GLES2/gl2.h"
       - "/usr/bin/GLES2/gl2.h"
       - "/sbin/GLES2/gl2.h"
       - "/bin/GLES2/gl2.h"
-      - "/usr/games/GLES2/gl2.h"
-      - "/usr/local/games/GLES2/gl2.h"
       - "/snap/bin/GLES2/gl2.h"
       - "/usr/local/include/x86_64-linux-gnu/GLES2/gl2.h"
       - "/usr/local/include/GLES2/gl2.h"
@@ -1973,17 +1719,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2016,16 +1757,12 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -2046,16 +1783,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/GLES3/gl3.h"
-      - "/home/coder/IDEs/helix/GLES3/gl3.h"
       - "/usr/local/sbin/GLES3/gl3.h"
       - "/usr/local/bin/GLES3/gl3.h"
       - "/usr/sbin/GLES3/gl3.h"
       - "/usr/bin/GLES3/gl3.h"
       - "/sbin/GLES3/gl3.h"
       - "/bin/GLES3/gl3.h"
-      - "/usr/games/GLES3/gl3.h"
-      - "/usr/local/games/GLES3/gl3.h"
       - "/snap/bin/GLES3/gl3.h"
       - "/usr/local/include/x86_64-linux-gnu/GLES3/gl3.h"
       - "/usr/local/include/GLES3/gl3.h"
@@ -2064,17 +1797,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2107,16 +1835,12 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -2140,16 +1864,12 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/home/coder/.local/bin/GL/xmesa.h"
-      - "/home/coder/IDEs/helix/GL/xmesa.h"
       - "/usr/local/sbin/GL/xmesa.h"
       - "/usr/local/bin/GL/xmesa.h"
       - "/usr/sbin/GL/xmesa.h"
       - "/usr/bin/GL/xmesa.h"
       - "/sbin/GL/xmesa.h"
       - "/bin/GL/xmesa.h"
-      - "/usr/games/GL/xmesa.h"
-      - "/usr/local/games/GL/xmesa.h"
       - "/snap/bin/GL/xmesa.h"
       - "/usr/local/include/x86_64-linux-gnu/GL/xmesa.h"
       - "/usr/local/include/GL/xmesa.h"
@@ -2175,17 +1895,12 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2218,16 +1933,12 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -2248,16 +1959,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/GL/glu.h"
-      - "/home/coder/IDEs/helix/GL/glu.h"
       - "/usr/local/sbin/GL/glu.h"
       - "/usr/local/bin/GL/glu.h"
       - "/usr/sbin/GL/glu.h"
       - "/usr/bin/GL/glu.h"
       - "/sbin/GL/glu.h"
       - "/bin/GL/glu.h"
-      - "/usr/games/GL/glu.h"
-      - "/usr/local/games/GL/glu.h"
       - "/snap/bin/GL/glu.h"
       - "/usr/local/include/x86_64-linux-gnu/GL/glu.h"
       - "/usr/local/include/GL/glu.h"
@@ -2266,17 +1973,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2309,16 +2011,12 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2339,16 +2037,12 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2356,17 +2050,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libOpenGL.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2399,10 +2088,6 @@ events:
     names:
       - "GLX"
     candidate_directories:
-      - "/home/coder/.local/bin/libglvnd/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/libglvnd/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
@@ -2415,10 +2100,6 @@ events:
       - "/sbin/"
       - "/bin/libglvnd/"
       - "/bin/"
-      - "/usr/games/libglvnd/"
-      - "/usr/games/"
-      - "/usr/local/games/libglvnd/"
-      - "/usr/local/games/"
       - "/snap/bin/libglvnd/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/libglvnd/"
@@ -2458,10 +2139,6 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/libglvnd/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/libglvnd/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
@@ -2474,10 +2151,6 @@ events:
       - "/sbin/"
       - "/bin/libglvnd/"
       - "/bin/"
-      - "/usr/games/libglvnd/"
-      - "/usr/games/"
-      - "/usr/local/games/libglvnd/"
-      - "/usr/local/games/"
       - "/snap/bin/libglvnd/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/libglvnd/"
@@ -2490,17 +2163,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLX.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2533,10 +2201,6 @@ events:
     names:
       - "EGL"
     candidate_directories:
-      - "/home/coder/.local/bin/libglvnd/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/libglvnd/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
@@ -2549,10 +2213,6 @@ events:
       - "/sbin/"
       - "/bin/libglvnd/"
       - "/bin/"
-      - "/usr/games/libglvnd/"
-      - "/usr/games/"
-      - "/usr/local/games/libglvnd/"
-      - "/usr/local/games/"
       - "/snap/bin/libglvnd/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/libglvnd/"
@@ -2592,10 +2252,6 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/libglvnd/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/libglvnd/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
@@ -2608,10 +2264,6 @@ events:
       - "/sbin/"
       - "/bin/libglvnd/"
       - "/bin/"
-      - "/usr/games/libglvnd/"
-      - "/usr/games/"
-      - "/usr/local/games/libglvnd/"
-      - "/usr/local/games/"
       - "/snap/bin/libglvnd/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/libglvnd/"
@@ -2624,17 +2276,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libEGL.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2667,16 +2314,12 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2697,16 +2340,12 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2714,17 +2353,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2758,16 +2392,12 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2788,16 +2418,12 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2817,16 +2443,12 @@ events:
       - "/opt/lib/"
       - "/opt/"
       - "/usr/lib/X11/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2834,17 +2456,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2878,16 +2495,12 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2911,16 +2524,12 @@ events:
       - "/usr/openwin/lib/"
       - "/usr/shlib/"
     searched_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -2928,158 +2537,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLU.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:521 (find_library)"
-      - "CMakeLists.txt:9 (find_package)"
-    mode: "library"
-    variable: "OPENGL_gl_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "GL"
-      - "MesaGL"
-    candidate_directories:
-      - "/home/coder/.local/bin/libglvnd/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/libglvnd/"
-      - "/home/coder/IDEs/helix/"
-      - "/usr/local/sbin/libglvnd/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/libglvnd/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/libglvnd/"
-      - "/usr/sbin/"
-      - "/usr/bin/libglvnd/"
-      - "/usr/bin/"
-      - "/sbin/libglvnd/"
-      - "/sbin/"
-      - "/bin/libglvnd/"
-      - "/bin/"
-      - "/usr/games/libglvnd/"
-      - "/usr/games/"
-      - "/usr/local/games/libglvnd/"
-      - "/usr/local/games/"
-      - "/snap/bin/libglvnd/"
-      - "/snap/bin/"
-      - "/usr/local/lib/x86_64-linux-gnu/libglvnd/"
-      - "/usr/local/lib/x86_64-linux-gnu/"
-      - "/usr/local/lib/libglvnd/"
-      - "/usr/local/lib/"
-      - "/usr/local/libglvnd/"
-      - "/usr/local/"
-      - "/usr/lib/x86_64-linux-gnu/libglvnd/"
-      - "/usr/lib/x86_64-linux-gnu/"
-      - "/usr/lib/libglvnd/"
-      - "/usr/lib/"
-      - "/usr/libglvnd/"
-      - "/usr/"
-      - "/lib/x86_64-linux-gnu/libglvnd/"
-      - "/lib/x86_64-linux-gnu/"
-      - "/lib/libglvnd/"
-      - "/lib/"
-      - "/usr/X11R6/lib/x86_64-linux-gnu/libglvnd/"
-      - "/usr/X11R6/lib/x86_64-linux-gnu/"
-      - "/usr/X11R6/lib/libglvnd/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/libglvnd/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/lib/x86_64-linux-gnu/libglvnd/"
-      - "/usr/pkg/lib/x86_64-linux-gnu/"
-      - "/usr/pkg/lib/libglvnd/"
-      - "/usr/pkg/lib/"
-      - "/usr/pkg/libglvnd/"
-      - "/usr/pkg/"
-      - "/opt/lib/x86_64-linux-gnu/libglvnd/"
-      - "/opt/lib/x86_64-linux-gnu/"
-      - "/opt/lib/libglvnd/"
-      - "/opt/lib/"
-      - "/opt/libglvnd/"
-      - "/opt/"
-      - "/usr/lib/X11/libglvnd/"
-      - "/usr/lib/X11/"
-      - "/opt/graphics/OpenGL/lib/libglvnd/"
-      - "/opt/graphics/OpenGL/lib/"
-      - "/usr/openwin/lib/libglvnd/"
-      - "/usr/openwin/lib/"
-      - "/usr/shlib/libglvnd/"
-      - "/usr/shlib/"
-    searched_directories:
-      - "/home/coder/.local/bin/libglvnd/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/libglvnd/"
-      - "/home/coder/IDEs/helix/"
-      - "/usr/local/sbin/libglvnd/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/libglvnd/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/libglvnd/"
-      - "/usr/sbin/"
-      - "/usr/bin/libglvnd/"
-      - "/usr/bin/"
-      - "/sbin/libglvnd/"
-      - "/sbin/"
-      - "/bin/libglvnd/"
-      - "/bin/"
-      - "/usr/games/libglvnd/"
-      - "/usr/games/"
-      - "/usr/local/games/libglvnd/"
-      - "/usr/local/games/"
-      - "/snap/bin/libglvnd/"
-      - "/snap/bin/"
-      - "/usr/local/lib/x86_64-linux-gnu/libglvnd/"
-      - "/usr/local/lib/x86_64-linux-gnu/"
-      - "/usr/local/lib/libglvnd/"
-      - "/usr/local/lib/"
-      - "/usr/local/libglvnd/"
-      - "/usr/local/"
-      - "/usr/lib/x86_64-linux-gnu/libglvnd/"
-    found: "/usr/lib/x86_64-linux-gnu/libGL.so"
-    search_context:
-      ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3138,22 +2601,6 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/coder/.local/GLEWConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/.local/glew-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/IDEs/helix/GLEWConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/IDEs/helix/glew-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/usr/local/GLEWConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -3178,22 +2625,6 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/usr/games/GLEWConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/games/glew-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/games/GLEWConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/games/glew-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/snap/GLEWConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -3212,17 +2643,12 @@ events:
     found: null
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3253,16 +2679,12 @@ events:
     names:
       - "GL/glew.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -3283,16 +2705,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/GL/glew.h"
-      - "/home/coder/IDEs/helix/GL/glew.h"
       - "/usr/local/sbin/GL/glew.h"
       - "/usr/local/bin/GL/glew.h"
       - "/usr/sbin/GL/glew.h"
       - "/usr/bin/GL/glew.h"
       - "/sbin/GL/glew.h"
       - "/bin/GL/glew.h"
-      - "/usr/games/GL/glew.h"
-      - "/usr/local/games/GL/glew.h"
       - "/snap/bin/GL/glew.h"
       - "/usr/local/include/x86_64-linux-gnu/GL/glew.h"
       - "/usr/local/include/GL/glew.h"
@@ -3301,17 +2719,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3346,16 +2759,6 @@ events:
       - "glew"
       - "glew32"
     candidate_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib64/"
       - "/usr/local/sbin/libx32/"
@@ -3386,16 +2789,6 @@ events:
       - "/bin/libx32/"
       - "/bin/lib/Release/x64/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/libx32/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib64/"
       - "/snap/bin/libx32/"
@@ -3492,36 +2885,6 @@ events:
       - "/usr/lib/X11/lib/Release/x64/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
@@ -3612,36 +2975,6 @@ events:
       - "/bin/"
       - "/bin/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/libx32/"
-      - "/usr/games/libx32/"
-      - "/usr/games/libx32/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
@@ -3717,17 +3050,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLEW.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3762,12 +3090,6 @@ events:
       - "glewd"
       - "glew32d"
     candidate_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib64/"
       - "/usr/local/sbin/"
@@ -3786,12 +3108,6 @@ events:
       - "/bin/lib/"
       - "/bin/lib64/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib64/"
       - "/snap/bin/"
@@ -3850,24 +3166,6 @@ events:
       - "/usr/lib/X11/lib64/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
@@ -3922,24 +3220,6 @@ events:
       - "/bin/"
       - "/bin/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
@@ -4114,17 +3394,12 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -4159,16 +3434,6 @@ events:
       - "glew"
       - "glew32s"
     candidate_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib64/"
       - "/usr/local/sbin/libx32/"
@@ -4199,16 +3464,6 @@ events:
       - "/bin/libx32/"
       - "/bin/lib/Release/x64/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/libx32/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib64/"
       - "/snap/bin/libx32/"
@@ -4305,36 +3560,6 @@ events:
       - "/usr/lib/X11/lib/Release/x64/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/libx32/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/lib/Release/x64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/libx32/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/lib/Release/x64/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
@@ -4425,36 +3650,6 @@ events:
       - "/bin/"
       - "/bin/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/libx32/"
-      - "/usr/games/libx32/"
-      - "/usr/games/libx32/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/lib/Release/x64/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/libx32/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/lib/Release/x64/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
@@ -4530,17 +3725,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLEW.a"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -4575,12 +3765,6 @@ events:
       - "glewds"
       - "glew32ds"
     candidate_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib64/"
       - "/usr/local/sbin/"
@@ -4599,12 +3783,6 @@ events:
       - "/bin/lib/"
       - "/bin/lib64/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib64/"
       - "/snap/bin/"
@@ -4663,24 +3841,6 @@ events:
       - "/usr/lib/X11/lib64/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/lib64/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/lib64/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
@@ -4735,24 +3895,6 @@ events:
       - "/bin/"
       - "/bin/"
       - "/bin/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/lib64/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/games/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/lib64/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
-      - "/usr/local/games/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
       - "/snap/bin/lib/"
@@ -4927,17 +4069,12 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -4951,294 +4088,6 @@ events:
         - "/opt"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:11 (find_package)"
-    name: "glfw3"
-    configs:
-      -
-        filename: "glfw3Config.cmake"
-        kind: "cmake"
-      -
-        filename: "glfw3-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "glfw3"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/pkgRedirects/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/pkgRedirects/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/.local/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/.local/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/IDEs/helix/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/IDEs/helix/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/games/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/games/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/games/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/games/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/snap/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/snap/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
-      - "/usr/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
-      - "/usr/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
-      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
-      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
-      - "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake:2 (find_dependency)"
-      - "CMakeLists.txt:11 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-t2r2tJ"
-      binary: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-t2r2tJ"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-t2r2tJ'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f24b2/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_f24b2.dir/build.make CMakeFiles/cmTC_f24b2.dir/build
-        gmake[1]: Entering directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-t2r2tJ'
-        Building C object CMakeFiles/cmTC_f24b2.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu99 -o CMakeFiles/cmTC_f24b2.dir/src.c.o -c /home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-t2r2tJ/src.c
-        Linking C executable cmTC_f24b2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f24b2.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_f24b2.dir/src.c.o -o cmTC_f24b2
-        gmake[1]: Leaving directory '/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/CMakeScratch/TryCompile-t2r2tJ'
-        
-      exitCode: 0
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:12 (find_package)"
-    name: "glm"
-    configs:
-      -
-        filename: "glmConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "glm-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "glm"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/pkgRedirects/glmConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/iisc/271_GV/assignment1/assign1/build/CMakeFiles/pkgRedirects/glm-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/.local/glmConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/.local/glm-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/IDEs/helix/glmConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/coder/IDEs/helix/glm-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/glmConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/glm-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/glmConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/glm-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found:
-      path: "/usr/share/cmake/glm/glmConfig.cmake"
-      mode: "config"
-      version: "1.0.1"
-    search_context:
-      ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
@@ -5257,16 +4106,12 @@ events:
     names:
       - "GL/freeglut.h"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
@@ -5287,16 +4132,12 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/GL/freeglut.h"
-      - "/home/coder/IDEs/helix/GL/freeglut.h"
       - "/usr/local/sbin/GL/freeglut.h"
       - "/usr/local/bin/GL/freeglut.h"
       - "/usr/sbin/GL/freeglut.h"
       - "/usr/bin/GL/freeglut.h"
       - "/sbin/GL/freeglut.h"
       - "/bin/GL/freeglut.h"
-      - "/usr/games/GL/freeglut.h"
-      - "/usr/local/games/GL/freeglut.h"
       - "/snap/bin/GL/freeglut.h"
       - "/usr/local/include/x86_64-linux-gnu/GL/freeglut.h"
       - "/usr/local/include/GL/freeglut.h"
@@ -5305,17 +4146,12 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -5347,16 +4183,12 @@ events:
     names:
       - "glut"
     candidate_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -5377,16 +4209,12 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
-      - "/home/coder/.local/bin/"
-      - "/home/coder/IDEs/helix/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
       - "/usr/bin/"
       - "/sbin/"
       - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
       - "/snap/bin/"
       - "/usr/local/lib/x86_64-linux-gnu/"
       - "/usr/local/lib/"
@@ -5394,17 +4222,12 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libglut.so"
     search_context:
       ENV{PATH}:
-        - "/home/coder/.local/bin"
-        - "/home/coder/IDEs/helix"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
         - "/usr/bin"
         - "/sbin"
         - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
         - "/snap/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
